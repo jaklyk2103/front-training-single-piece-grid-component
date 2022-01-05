@@ -25,6 +25,17 @@ body {
   padding: 1.5rem 1.5rem 2rem 1.5rem;
 }
 
+.item:first-of-type {
+  border: none;
+  border-radius: 0.25rem 0.25rem 0 0;
+} 
+
+.item:last-of-type {
+  border: none;
+  border-radius: 0 0 0.25rem 0.25rem;
+}
+
+
 .join-community-block {
   background-color: white;
 }
@@ -46,7 +57,7 @@ body {
 
 .join-community-block .content {
   color: var(--color-neutral2);
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
   line-height: 1.625em;
 }
 
@@ -63,7 +74,7 @@ body {
 
 .subscription-block .cost {
   display: grid;
-  grid-template-columns: 1fr 2.5fr;
+  grid-template-columns: 70px auto;
   margin-bottom: 0.5rem;
 }
 
@@ -86,17 +97,38 @@ body {
 }
 
 .subscription-block .button {
-  
+  background-color: var(--color-primary2);
+  color: white;
+  font-weight: var(--font-weight-bold);
+  font-size: 0.9375rem;
+  margin-top: 2rem;
+  padding-top: 0.825rem;
+  padding-bottom: 0.825rem;
+  border-radius: 0.25rem;
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.1);;
+  border: none;
+  display: block;
+  width: 100%;
 }
 
 .why-us-block {
   font-size: 1rem;
+  background-color: var(--color-primary1);
+  opacity: 70%;
+  color :white;
 }
 
 .why-us-block .title {
-
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1rem;
 }
 
-.why-us-block .content {
-
+.why-us-block .content-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.25rem;
+  font-size: 0.825rem;
+  opacity: 90%;
 }
